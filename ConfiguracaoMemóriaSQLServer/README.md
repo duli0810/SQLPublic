@@ -5,7 +5,7 @@ O passo a passo irá mostrar de modo simple como realiza configuração da memó
 
 ################################ IMPORTANTE ################################# 
         É de total responsabilidade e risco a execução dos procedimento.
-#############################################################################
+
 #
 
 1 - Digite a Query e execute, para saber o valor máximo de memoria:
