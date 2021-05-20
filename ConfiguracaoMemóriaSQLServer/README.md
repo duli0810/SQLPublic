@@ -1,7 +1,7 @@
 # Configurando a Memória do SQL Server
 
 
-O passo a passo irá mostrar de modo simple como realiza configuração da memória do SQL Server, mesmo ele estando em produção. 
+O passo a passo irá mostrar de modo simple como realiza a configuração da memória do SQL Server, mesmo ele estando em produção. 
 
 #
  ⭐⭐⭐ Não possuo quaisquer responsabilidade na execução dos procedimento. ⭐⭐⭐
@@ -34,8 +34,10 @@ O passo a passo irá mostrar de modo simple como realiza configuração da memó
 Referencia:
 
 "Você pode alterá-las sem reiniciar o servidor"
+
     https://docs.microsoft.com/pt-br/sql/relational-databases/system-stored-procedures/sp-configure-transact-sql?view=sql-server-ver15
 
 "Essas configurações entram em vigor imediatamente sem a reinicialização do servidor"
+
     https://docs.microsoft.com/pt-br/sql/database-engine/configure-windows/server-memory-server-configuration-options?view=sql-server-ver15
 
