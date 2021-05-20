@@ -31,7 +31,7 @@ O passo a passo irá mostrar de modo simple como realiza a configuração da mem
 🖥️ Acesse o Blog e veja o passo a passo: https://acesso8.blogspot.com/
 
 #
-Referencia:
+⭐Referencia:
 
 "Você pode alterá-las sem reiniciar o servidor"
 
