@@ -30,12 +30,12 @@ O passo a passo irá mostrar de modo simple como realiza configuração da memó
 #
 🖥️ Acesse o Blog e veja o passo a passo: https://acesso8.blogspot.com/
 
-"
+#
 Referencia:
 
-###você pode alterá-las sem reiniciar o servidor##
-https://docs.microsoft.com/pt-br/sql/relational-databases/system-stored-procedures/sp-configure-transact-sql?view=sql-server-ver15
+"Você pode alterá-las sem reiniciar o servidor"
+    https://docs.microsoft.com/pt-br/sql/relational-databases/system-stored-procedures/sp-configure-transact-sql?view=sql-server-ver15
 
-###Essas configurações entram em vigor imediatamente sem a reinicialização do servidor#
-https://docs.microsoft.com/pt-br/sql/database-engine/configure-windows/server-memory-server-configuration-options?view=sql-server-ver15
-"
+"Essas configurações entram em vigor imediatamente sem a reinicialização do servidor"
+    https://docs.microsoft.com/pt-br/sql/database-engine/configure-windows/server-memory-server-configuration-options?view=sql-server-ver15
+
