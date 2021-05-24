@@ -28,7 +28,7 @@ O passo a passo irá mostrar de modo simple como realiza a configuração da mem
     sp_configure 'max server memory' 
     
 #
-🖥️ Acesse o Blog e veja o passo a passo: https://acesso8.blogspot.com/
+🖥️ Acesse o Blog e veja o passo a passo: https://acesso8.blogspot.com/2021/05/configurando-de-memoria-do-sql-server.html
 
 #
 ⭐Referencia:
