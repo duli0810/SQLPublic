@@ -10,6 +10,8 @@ O passo a passo irá mostrar de modo simple como realiza a configuração da mem
 
 1 - Digite a Query e execute, para saber o valor máximo de memoria atual:
 
+    sp_configure 'show advanced options', 1;  
+    GO 
     sp_configure 'max server memory'
     
 2 - Vamos alterar a memoria maxima do SQL: 
