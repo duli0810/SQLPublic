@@ -1,4 +1,4 @@
-# Configurando a Memória do SQL Server
+# Configurando a Memória "Maximum" do SQL Server
 
 
 O passo a passo irá mostrar de modo simple como realiza a configuração da memória do SQL Server, mesmo ele estando em produção. 
