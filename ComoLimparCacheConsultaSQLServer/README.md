@@ -6,7 +6,7 @@ O passo a passo irá mostrar como limpar o cache de consulta do SQL Server?.
 
 " ⚠️Atenção: A limpeza de cache deve ser utilizada de modo controlado, pois em um ambiente de produção  pode ocasionar queda de performance, devido a função Cache de plano, que armazena consultas que já foram executadas, com isso o SQL tem a possibilidade de reutilizadas estas consultas para assim otimizar a performance. 
 
-Escolha um horário adequando, fora do horário de pico e certifique que seu backup esta Ok"
+Escolha um horário adequado, fora do horário de pico e certifique que seu backup esta Ok"
 
 #
  ⭐⭐⭐ Não possuo quaisquer responsabilidade na execução dos procedimento. ⭐⭐⭐
