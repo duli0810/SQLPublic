@@ -15,7 +15,7 @@ A criptografia de um arquivo de banco de dados é feita no nível da página. As
 
 #
 
-1- Crie uma chave mestra
+1 - Crie uma chave mestra
 
    USE master;
    GO
