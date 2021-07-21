@@ -10,7 +10,7 @@ GO
 
 -- 2- Crie ou obtenha um certificado protegido pela chave mestra
 
-CREATE CERTIFICATE <Nome para certificado - Replica Primaria> WITH SUBJECT = 'Certificado Database';
+CREATE CERTIFICATE <Nome para certificado da Replica Primaria> WITH SUBJECT = 'Certificado Database';
 GO
 
 -- 3- Crie uma chave de criptografia de banco de dados e proteja-a usando o certificado;
@@ -19,15 +19,15 @@ USE <Nome do Banco de Dados>;
 GO
 CREATE DATABASE ENCRYPTION KEY
 WITH ALGORITHM = AES_256
-ENCRYPTION BY SERVER CERTIFICATE <certificado - Replica Primaria>;
+ENCRYPTION BY SERVER CERTIFICATE <certificado da Replica Primaria>;
 GO
 
--- 4- Backup do chave e certificado na replica Primaria
+-- 4- Backup do chave e certificado da Replica Primaria
 
 USE [master]
 GO
 
-BACKUP CERTIFICATE <certificado - Replica Primaria> 
+BACKUP CERTIFICATE <certificado da Replica Primaria> 
 TO FILE =  'C:\Backups\Certificados\<Nome do Banco de Dados>.cer'
 WITH PRIVATE KEY ( FILE = 'C:\Backups\Certificados\<Nome do Banco de Dados>.pvk', 
 ENCRYPTION BY PASSWORD = '<Crie uma Senha>' );
@@ -43,7 +43,7 @@ GO
 
 -- 6- Importe o certificado da replica Primaria na replica Secundária 
 
-CREATE CERTIFICATE <Nome para certificado - Replica Secundária>
+CREATE CERTIFICATE <Nome para certificado da Replica Secundária>
    FROM FILE =  'C:\Backups\Certificados\<Nome do Banco de Dados>.cer'
    WITH PRIVATE KEY ( FILE = 'C:\Backups\Certificados\<Nome do Banco de Dados>.pvk', 
                       DECRYPTION BY PASSWORD = '<Senha Criada no Backup>' );
