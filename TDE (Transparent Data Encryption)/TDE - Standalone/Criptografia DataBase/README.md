@@ -1,4 +1,4 @@
-# Criptografia de Dados Transparente (TDE)
+# Criptografando DataBase
 
 
 O passo a passo irá mostrar como criptografar no modo TDE 
