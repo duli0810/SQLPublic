@@ -1,7 +1,7 @@
 # Descriptografar DataBase
 
 
-O passo a passo irá mostrar como criptografar no modo TDE 
+O passo a passo irá mostrar como descriptografar uma DataBase
 
 
 " ⚠️Atenção: TDE (Transparent Data Encryption - Criptografia de Dados Transparente)
