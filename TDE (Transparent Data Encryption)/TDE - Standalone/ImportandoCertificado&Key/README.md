@@ -1,7 +1,7 @@
 # Importando Certificado e Key da DataBase
 
 
-O passo a passo irá mostrar como criptografar no modo TDE 
+O passo a passo irá mostrar como Importar o certificado e Key para uma outra instancia, para assim conseguir restaurar a database e visualizar os dados fora da instancia nativa. 
 
 
 " ⚠️Atenção1: TDE (Transparent Data Encryption - Criptografia de Dados Transparente)
