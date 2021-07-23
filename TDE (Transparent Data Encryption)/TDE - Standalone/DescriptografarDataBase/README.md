@@ -7,6 +7,7 @@ O passo a passo irá mostrar como criptografar no modo TDE
 " ⚠️Atenção: TDE (Transparent Data Encryption - Criptografia de Dados Transparente)
 
 ⚠️Atenção : Quando recriptografar novamente a Database que que foi descriptografada, deve realizar backup do log. Caso não faça apresentará erro abaixo:
+#
 “Msg 33103, Level 16, State 1, Line 56
 A database encryption key already exists for this database.
 Msg 33122, Level 16, State 1, Line 60
@@ -15,7 +16,7 @@ Msg 5069, Level 16, State 1, Line 60
 ALTER DATABASE statement failed."
 
 Completion time: 2021-07-22T22:06:11.3854230-03:00”
-
+#
 
 O TDE proteje através da criptgrafia o banco de dados por completo.
 
