@@ -27,18 +27,8 @@ A criptografia de um arquivo de banco de dados é feita no nível da página. As
     
 	CREATE CERTIFICATE <Nome para certificado da Replica Primaria> WITH SUBJECT = 'Certificado Database';
     GO
-
-
-3 - Crie uma chave de criptografia de banco de dados e proteja-a usando o certificado;
-
-    USE <Nome do Banco de Dados>;
-    GO
-    CREATE DATABASE ENCRYPTION KEY
-    WITH ALGORITHM = AES_256
-    ENCRYPTION BY SERVER CERTIFICATE <certificado da Replica Primaria>;
-    GO  
 	
-4 - Backup da chave e certificado da Réplica Primária;
+3 - Backup da chave e certificado da Réplica Primária;
     
 	USE [master]
     GO
@@ -49,7 +39,7 @@ A criptografia de um arquivo de banco de dados é feita no nível da página. As
     ENCRYPTION BY PASSWORD = '<Crie uma Senha>' );
     GO 
 	
-5 - Crie uma chave mestra na Réplica Secundária;
+4 - Crie uma chave mestra na Réplica Secundária;
 
     USE master;
     GO
@@ -57,7 +47,7 @@ A criptografia de um arquivo de banco de dados é feita no nível da página. As
     CREATE MASTER KEY ENCRYPTION BY PASSWORD = '<Crie uma Senha>';
     GO   
 	
-6 - Importe o certificado da Réplica Primária na Réplica Secundária;
+5 - Importe o certificado da Réplica Primária na Réplica Secundária;
 
     CREATE CERTIFICATE <Nome para certificado da Replica Secundária>
       FROM FILE =  'C:\Backups\Certificados\<Nome do Banco de Dados>.cer'
@@ -65,8 +55,15 @@ A criptografia de um arquivo de banco de dados é feita no nível da página. As
                       DECRYPTION BY PASSWORD = '<Senha Criada no Backup>' );
     GO 
  	
-7 - Habilite o TDE para Database na Réplica Primária; 
+6 - Crie uma chave de criptografia de banco de dados, proteja-a usando o certificado é habilite o TDE para Database na Réplica Primária; 
 
+    USE <Nome do Banco de Dados>;
+    GO
+    CREATE DATABASE ENCRYPTION KEY
+    WITH ALGORITHM = AES_256
+    ENCRYPTION BY SERVER CERTIFICATE <certificado da Replica Primaria>;
+    GO  
+    
     ALTER DATABASE <Nome do Banco de Dados>
     SET ENCRYPTION ON;
     GO
